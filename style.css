@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 600px;
+    height: 1000px;
+    border: 1px solid black;
+    border-radius: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    padding: 10px;
+    background: #000;
+}
+
+.buttons {
+    display: grid;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 250px repeat(5, 1fr);
+    grid-template-areas: "screen screen screen screen"
+                         "ce plusminus percent divide"
+                         "seven eight nine multi"
+                         "four five six substract"
+                         "one two three add"
+                         "null dot equal add";
+}
+
+.buttons > * {
+    background: rgb(41, 194, 214);
+    color: #FFF;
+    border-radius: 12px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+
+.buttons > *:hover {
+    background: rgb(32, 173, 192);
+}
+
+.buttons > *:active {
+    background: rgb(25, 140, 155);
+}
+
+.screen {
+    grid-area: screen;
+    background: black;
+    
+}
+
+.screen:hover, .screen:active {
+    background: #000;
+}
+
+.ce {
+    grid-area: ce;
+}
+.plusminus {
+    grid-area: plusminus;
+}
+.percent {
+    grid-area: percent;
+}
+.divide {
+    grid-area: divide;
+}
+.seven {
+    grid-area: seven;
+}
+.eight {
+    grid-area: eight;
+}
+.nine {
+    grid-area: nine;
+}
+.multi {
+    grid-area: multi;
+}
+.four {
+    grid-area: four;
+}
+.five {
+    grid-area: five;
+}
+.six {
+    grid-area: six;
+}
+.substract {
+    grid-area: substract;
+}
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+.add {
+    grid-area: add;
+}
+.null {
+    grid-area: null;
+}
+.dot {
+    grid-area: dot;
+}
+.equal {
+    grid-area: equal;
+}
