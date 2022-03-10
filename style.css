@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #afaeae;
+}
+
 .wrapper {
     width: 600px;
     height: 1000px;
@@ -15,11 +19,17 @@
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-    padding: 10px;
+    padding: 20px;
     background: #000;
 }
 
-.buttons {
+.screen__main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 70px;
+}
+.calc {
     display: grid;
     gap: 10px;
     height: 100%;
@@ -34,7 +44,7 @@
                          "null dot equal add";
 }
 
-.buttons > * {
+.calc > * {
     background: rgb(41, 194, 214);
     color: #FFF;
     border-radius: 12px;
@@ -47,11 +57,11 @@
 }
 
 
-.buttons > *:hover {
+.calc > *:hover {
     background: rgb(32, 173, 192);
 }
 
-.buttons > *:active {
+.calc > *:active {
     background: rgb(25, 140, 155);
 }
 
