@@ -9,7 +9,6 @@
 body {
     background: #afaeae;
 }
-
 .wrapper {
     width: 600px;
     height: 1000px;
@@ -22,7 +21,15 @@ body {
     padding: 20px;
     background: #000;
 }
-
+.screen {
+    position: relative;
+}
+.screen__under {
+    position: absolute;
+    right: 20px;
+    bottom: 4px;
+    font-size: 70px;
+}
 .screen__main {
     width: 100%;
     display: flex;
