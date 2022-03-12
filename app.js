@@ -3,7 +3,7 @@ const screenUnder = document.querySelector(".screen__under");
 let screenInput = [];
 let screenOutput = 0;
 if (screenInput.length == 0) {
-  screenDisplay.innerText = "0";
+  screenDisplay.innerText = "";
 }
 document.querySelectorAll(".button").forEach((button) => {
   button.addEventListener("click", () => {
@@ -15,19 +15,10 @@ document.querySelectorAll(".button").forEach((button) => {
       screenDisplay.innerText = "0";
     }
     if (
-      buttonValue == 0 ||
-      buttonValue == 1 ||
-      buttonValue == 2 ||
-      buttonValue == 3 ||
-      buttonValue == 4 ||
-      buttonValue == 5 ||
-      buttonValue == 6 ||
-      buttonValue == 7 ||
-      buttonValue == 8 ||
-      buttonValue == 9 ||
+      buttonValue >= 0 &&
+      buttonValue <= 9 ||
       buttonValue == "."
     ) {
-      // not working
       screenUnder.innerText = "";
       screenInput.push(buttonValue);
       screenOutput = screenInput.join("");
